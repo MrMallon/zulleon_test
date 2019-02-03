@@ -4,21 +4,11 @@ using UnityEngine;
 
 public class ConversationButton : MonoBehaviour {
 
-    public Canvas Parent;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public GameObject Parent;
 
     public void CloseCanvas()
     {
-        Parent.enabled = false;
+        DestroyObject(Parent);
     }
 
     public void NextPhrase()
